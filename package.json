@@ -1,0 +1,16 @@
+{
+  "name": "dotfiles",
+  "version": "1.0.0",
+  "description": "personal dotfiles",
+  "main": "index.js",
+  "repository": "git@github.com:ericrallen/dotfiles.git",
+  "author": "Eric Allen <decoy@internetalche.me>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "symlink": "yarn symlink:bash_profile && yarn symlink:bashrc && yarn symlink:gitconfig",
+    "symlink:bash_profile": "ln -sv ./.bash_profile ~",
+    "symlink:bashrc": "ln -sv ./.bashrc ~",
+    "symlink:gitconfig": "ln -sv ./.gitconfig ~"
+  }
+}
