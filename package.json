@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "postinstall": "npm install -g @jlegrone/git-config && yarn symlink",
     "symlink": "yarn symlink:bash_profile && yarn symlink:bashrc && yarn symlink:gitconfig",
     "symlink:bash_profile": "ln -sv ./.bash_profile ~",
     "symlink:bashrc": "ln -sv ./.bashrc ~",
