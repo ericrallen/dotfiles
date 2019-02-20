@@ -94,7 +94,7 @@ function format_prompt {
       local unclean_marker="Δ"
       local untracked_marker="??"
 
-      if [ "$clean_status" != "nothing to commit, working directory clean" ]; then
+      if [ "$clean_status" != "nothing to commit, working tree clean" ]; then
           if [ "$untracked_status" == "Untracked files:" ]; then
             echo " $untracked_marker"
           else
